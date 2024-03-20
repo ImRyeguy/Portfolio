@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../dist/output.css" rel="stylesheet">
+    <title>Ryans Powershell</title>
+</head>
+<body class="w-full h-screen bg-zinc-800 font-ubuntu">
+    <div id="nav" class="w-full h-1/12 flex items-end">
+        <div id="tab0" class="w-96 h-4/6 bg-zinc-900 hover:bg-black rounded-t-2xl flex items-center justify-between p-2 ml-2 tabs">
+            <div class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="svg-graphic w-10 h-10">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z" />
+                </svg>
+                <h2 class="text-white md:text-2xl text-xl ml-2 hidden sm:inline">Home</h2>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-8 h-8 hover:bg-zinc-950 rounded-xl close-button">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </div>
+        <div id="tab1" class="w-96 h-4/6 bg-zinc-900 hover:bg-black rounded-t-2xl flex items-center justify-between p-2 ml-1 tabs">
+            <div class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-10 h-10 svg-graphic">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 014.5 9.75h15A2.25 2.25 0 0121.75 12v.75m-8.69-6.44l-2.12-2.12a1.5 1.5 0 00-1.061-.44H4.5A2.25 2.25 0 002.25 6v12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9a2.25 2.25 0 00-2.25-2.25h-5.379a1.5 1.5 0 01-1.06-.44z" />
+                </svg>
+                <h2 class="text-white md:text-2xl text-xl ml-2 hidden sm:inline">Projects</h2>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-8 h-8 hover:bg-zinc-950 rounded-xl close-button">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </div>
+        <div id="tab2" class="w-96 h-4/6 bg-black rounded-t-2xl flex items-center justify-between p-2 ml-1 tabs">
+            <div class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="svg-graphic w-10 h-10">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                </svg>
+                <h2 class="text-white md:text-2xl text-xl ml-2 hidden sm:inline">Featured</h2>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-8 h-8 hover:bg-zinc-950 rounded-xl close-button">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </div>
+        <div id="add-button" class="w-14 h-4/6 bg-zinc-800 hover:bg-zinc-900 rounded-t-2xl flex items-center justify-between p-2 ml-1">
+            <svg class="w-12 h-12" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50" xml:space="preserve">
+                <line style="fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" x1="25" y1="13" x2="25" y2="38"/>
+                <line style="fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" x1="37.5" y1="25" x2="12.5" y2="25"/>
+            </svg>
+        </div>
+    </div>
+    <div id="main" class="w-full h-10/12 bg-black text-white overflow-y-auto">
+        <div class="p-2 flex flex-wrap">
+            <div class="lg:w-1/3">
+                <h1 class="text-2xl border-b-2 color-text font-progmono">The Lost Frontier</h1>
+                <p class="color-text font-progmono">Welcome to the Wild West Frontier! I'm thrilled to introduce you to my upcoming website, a virtual gateway to an immersive and captivating Dungeons and Dragons campaign set in a unique blend of wild west and fantasy realms. As you explore this website, which is currently under development but will be coming soon, you'll embark on an unforgettable journey where cowboys and sorcery intertwine.<br>
+                Upon visiting the site, players will be greeted by a carefully crafted user interface, inspired by the iconic figma design, that seamlessly guides them through a world brimming with endless possibilities. The centerpiece of this interactive experience is a live map that invites adventurers to chart their course across vast landscapes, from arid desert plains to enchanted forests teeming with mythical creatures.<br>
+                Delving into the lore section, players will uncover a rich tapestry of history and legends, painting a vivid picture of the Wild West Fantasy universe. From the pioneers who first settled these untamed lands to the enigmatic sorcerers who wield their arcane powers alongside six-shooters, every character and faction is meticulously detailed, adding depth and authenticity to the campaign.<br>
+                Intriguing quests beckon from every corner of the website, enticing players to embark on epic adventures that will test their mettle and shape the course of the frontier. Whether it's tracking down elusive outlaws or unearthing ancient artifacts, each quest promises its own set of challenges and rewards, all within reach through the intuitive navigation system.<br>
+                But the Wild West Frontier is not just about quests; it's a living, breathing world filled with rumors and whispers. The website offers a dedicated section where players can immerse themselves in the latest gossip and secrets, unveiling hidden knowledge that may hold the key to their success.<br>
+                I'm excited to bring this vision to life and provide players with an all-encompassing online hub that captures the spirit of the Wild West Fantasy campaign. Keep an eye out for the official launch, where you'll have the opportunity to explore the site's full functionality and immerse yourself in the thrilling adventures that await. Together, we'll forge a new chapter in the annals of the Wild West, where fantasy and the untamed frontier collide.</p>
+            </div>
+                <img src="../images/featured.png" src="Figma of featured upcoming project" class="lg:w-2/3 w-auto border-2">
+        </div>
+    </div>
+    <div id="footer" class="w-full h-1/12 flex justify-between items-center">
+        <div id="icons" class="flex items-center space-x-2">
+            <svg class="w-14 h-14 ml-2 svg-graphic" viewBox="0 0 194 174" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="svg-graphic-fill" d="M38.12 121.872C38.632 121.152 38.872 120.352 38.872 119.456C38.872 118.288 38.456 117.296 37.624 116.448C36.792 115.616 35.784 115.2 34.616 115.2H29L30.104 117.104L30.344 117.344H34.616C35.192 117.344 35.688 117.552 36.104 117.968C36.536 118.384 36.744 118.88 36.744 119.456C36.744 120.048 36.536 120.56 36.104 120.976C35.688 121.392 35.192 121.6 34.616 121.6L32.712 121.584L36.424 128H38.872L36.248 123.408C37 123.104 37.624 122.592 38.12 121.872ZM48.8999 121.6L53.8919 115.2H51.1879L47.5399 119.872L43.9079 115.2H41.1719L46.1959 121.6L41.1719 128H43.9079L47.5399 123.328V123.344L48.8999 121.6ZM47.5399 123.328L43.9079 128L47.5399 123.344V123.328ZM54.1714 123.744L56.0594 119.984L57.9314 123.744H60.3314L56.0594 115.2L49.6594 128H52.0274L53.1154 125.856L54.1714 123.744ZM61.3874 125.872H59.0194L60.0754 128H62.4594L61.3874 125.872ZM66.4026 115.2V122.864L57.8906 115.2V118.432L68.5306 128V127.984V127.968V115.2H66.4026ZM81.0324 126.768C81.8644 125.92 82.2964 124.912 82.2964 123.744V115.2H80.1364V123.744C80.1364 124.336 79.9284 124.832 79.4964 125.248L80.4404 126.192L81.0324 126.768ZM76.5204 125.232L74.9844 126.768C75.8164 127.584 76.8244 128 78.0084 128V125.856C77.4324 125.856 76.9364 125.648 76.5204 125.232ZM80.4404 126.192L81.0324 126.768L80.4404 126.192ZM87.2964 123.744L89.1844 119.984L91.0564 123.744H93.4564L89.1844 115.2L82.7844 128H85.1524L86.2404 125.856L87.2964 123.744ZM94.5124 125.872H92.1444L93.2004 128H95.5844L94.5124 125.872ZM93.3023 122.496L98.8383 128L93.3023 122.496ZM98.8383 115.2L93.3023 120.72L98.8383 115.2ZM101.846 115.2H98.8383L93.3023 120.72L92.4062 121.616L93.3023 122.496L98.8383 128H101.846L95.4463 121.6L101.846 115.2ZM112.216 122.672C112.216 123.536 111.88 124.288 111.256 124.912C110.632 125.536 109.88 125.856 109 125.856C108.12 125.856 107.352 125.552 106.728 124.912C106.12 124.304 105.816 123.552 105.816 122.672V115.2H103.688V122.672C103.688 124.128 104.2 125.408 105.24 126.448C106.28 127.488 107.544 128 109 128C110.456 128 111.736 127.488 112.776 126.448C113.832 125.408 114.344 124.144 114.344 122.672H112.216ZM124.687 118.928C124.687 118.416 124.591 117.936 124.399 117.488C124.207 117.024 123.935 116.64 123.599 116.304C123.263 115.952 122.863 115.696 122.399 115.488C121.935 115.296 121.455 115.2 120.959 115.2H114.031L116.159 117.344H120.959C121.167 117.344 121.375 117.376 121.567 117.456C121.775 117.536 121.951 117.648 122.095 117.808C122.239 117.952 122.351 118.128 122.431 118.32C122.511 118.512 122.559 118.72 122.559 118.928C122.559 119.152 122.511 119.36 122.431 119.552C122.351 119.744 122.239 119.92 122.095 120.064C121.951 120.224 121.775 120.336 121.567 120.416C121.375 120.512 121.167 120.544 120.959 120.544H116.159H115.311H114.031V122.672H116.159H120.959C121.183 122.672 121.391 122.72 121.599 122.8C121.791 122.88 121.951 123.008 122.095 123.152C122.239 123.296 122.351 123.472 122.431 123.664C122.511 123.856 122.559 124.064 122.559 124.272C122.559 124.48 122.511 124.688 122.431 124.88C122.351 125.072 122.239 125.248 122.095 125.392C121.951 125.552 121.775 125.664 121.567 125.744C121.375 125.824 121.167 125.856 120.959 125.856H116.159V128H120.959C121.471 128 121.951 127.904 122.399 127.712C122.863 127.504 123.263 127.248 123.599 126.896C123.935 126.56 124.207 126.176 124.399 125.712C124.591 125.264 124.687 124.784 124.687 124.272C124.687 123.216 124.319 122.32 123.567 121.6C124.319 120.864 124.687 119.968 124.687 118.928ZM129.097 117.312L126.969 115.2V128L129.097 125.856V117.312ZM127.5 127.824V128H136.028V125.856H129.628L127.5 127.824ZM127.5 115.2L129.628 117.344H136.028V115.2H127.5ZM127.5 120.544V122.672H129.628H136.028V120.544H129.628H127.5ZM139.8 125.856L137.672 128H146.2V125.856H139.8ZM137.672 115.2V115.552V125.104L139.8 122.96V115.552V115.2H137.672ZM147.771 122.672C148.219 122.672 148.587 122.832 148.907 123.152C149.211 123.472 149.387 123.84 149.387 124.272C149.387 124.496 149.339 124.704 149.259 124.896C149.179 125.104 149.067 125.264 148.923 125.408C148.779 125.552 148.603 125.664 148.395 125.744C148.203 125.824 147.995 125.856 147.771 125.856V128C148.811 128 149.691 127.632 150.411 126.912C151.147 126.176 151.515 125.296 151.515 124.272C151.515 123.248 151.147 122.368 150.411 121.632C149.691 120.912 148.811 120.544 147.771 120.544H144.587C144.123 120.544 143.755 120.384 143.435 120.064C143.131 119.744 142.987 119.376 142.987 118.928C142.987 118.72 143.019 118.512 143.099 118.32C143.179 118.128 143.291 117.952 143.435 117.808C143.595 117.648 143.755 117.536 143.963 117.456C144.155 117.376 144.363 117.344 144.587 117.344V115.2C143.547 115.2 142.667 115.568 141.947 116.304C141.227 117.04 140.859 117.904 140.859 118.928C140.859 119.968 141.227 120.848 141.947 121.584C142.667 122.304 143.547 122.672 144.587 122.672H147.771ZM151.912 122.496L157.448 128L151.912 122.496ZM157.448 115.2L151.912 120.72L157.448 115.2ZM160.456 115.2H157.448L151.912 120.72L151.016 121.616L151.912 122.496L157.448 128H160.456L154.056 121.6L160.456 115.2ZM164.425 117.312L162.297 115.2V128L164.425 125.856V117.312Z" fill="white"/>
+                <path class="svg-graphic-fill" fill-rule="evenodd" clip-rule="evenodd" d="M126.613 80.4849C125.927 80.658 125.457 80.758 124.997 80.8965C122.116 81.7465 119.215 82.4196 116.215 82.2927C112.206 82.1196 108.762 80.3003 105.725 77.3695C104.498 76.181 103.359 74.8695 102.186 73.6079C101.617 73.0002 101.481 72.3079 101.914 71.5156L103.022 69.4886L104.518 71.3425C106.676 74.0425 108.984 76.5003 112.028 77.8118C115.018 79.0965 118.063 78.908 121.12 78.3272C125.443 77.5118 129.435 75.5618 133.349 73.3733C133.478 73.3002 133.622 73.2541 134 73.0848C133.741 73.6348 133.598 73.9618 133.434 74.2695C127.72 85.1081 122.007 95.9467 116.286 106.781C115.584 108.112 115.322 108.212 114.101 107.539C106.035 103.07 97.5875 102.22 88.867 103.912C87.5034 104.178 87.2614 104.047 86.6102 102.47C85.8977 100.747 85.9045 100.793 87.517 100.443C92.0101 99.4527 96.6107 99.2413 101.16 99.816C105.418 100.354 109.663 101.062 113.569 103.324C114.128 103.651 114.425 103.378 114.705 102.854C117.183 98.1852 119.661 93.5159 122.153 88.8543C123.486 86.3581 124.847 83.8811 126.186 81.3926C126.302 81.1773 126.394 80.9503 126.613 80.4849V80.4849ZM66.4284 80.9503C67.0011 82.0388 67.5739 83.1273 68.1534 84.2119L79.6216 105.674C80.167 106.697 80.167 106.728 79.2227 107.216C77.1875 108.274 77.4398 108.547 76.1955 106.197C71.7977 97.8698 67.4068 89.5351 63.0159 81.2042L59.4568 74.4541C59.2864 74.1348 59.15 73.7887 59 73.4541L59.133 73.2541C59.6341 73.5041 60.1386 73.7387 60.633 74.0002C63.6432 75.5887 66.6875 77.0657 69.9125 77.9657C74.0511 79.1272 78.1386 79.2618 82.083 77.0426C84.5375 75.6618 86.5591 73.6271 88.3795 71.3079C91.2943 67.5848 93.6602 63.4078 95.8045 59.0539L96.3261 58C96.6091 58.4769 96.7898 58.8385 97.0182 59.1539C98.2761 60.8923 97.9795 62.4385 96.9193 64.2385C94.5534 68.254 92.1705 72.231 89.0205 75.4926C86.2045 78.408 83.0477 80.608 79.3386 81.6119C76.4273 82.4003 73.5023 82.2427 70.5807 81.6311C69.2443 81.3503 67.9148 81.0349 66.5818 80.7349L66.4284 80.9503V80.9503Z" fill="white"/>
+                <path d="M168 130L192 173H144" stroke="white" stroke-width="2"/>
+                <path d="M26 130L2 173H50" stroke="white" stroke-width="2"/>
+                <path d="M73 46L97 3L121 46" stroke="white" stroke-width="2"/>
+            </svg>
+            <div class="w-14 h-14 bg-zinc-900 rounded-xl">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-14 h-14 svg-graphic">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z" />
+                </svg>
+            </div>
+            <div class="w-14 h-14 hover:bg-zinc-900 rounded-xl flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="#1DA1F2" fill="#1DA1F2" class="w-11 h-11">
+                    <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                </svg>
+            </div>
+            <div class="w-14 h-14 hover:bg-zinc-900 rounded-xl flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill=#833AB4 viewBox="0 0 24 24" stroke=#833AB4 class="w-11 h-11">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+            </div>
+            <div class="w-14 h-14 hover:bg-zinc-900 rounded-xl flex items-center justify-center">
+                <svg class="w-12 h-12" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 461.001 461.001" xml:space="preserve" fill="#FD1D1D" stroke="#FD1D1D">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier"> <g> <path style="fill:#FD1D1D;" d="M365.257,67.393H95.744C42.866,67.393,0,110.259,0,163.137v134.728 c0,52.878,42.866,95.744,95.744,95.744h269.513c52.878,0,95.744-42.866,95.744-95.744V163.137 C461.001,110.259,418.135,67.393,365.257,67.393z M300.506,237.056l-126.06,60.123c-3.359,1.602-7.239-0.847-7.239-4.568V168.607 c0-3.774,3.982-6.22,7.348-4.514l126.06,63.881C304.363,229.873,304.298,235.248,300.506,237.056z"></path> </g> </g>
+                </svg>
+            </div>
+            <div id="github" class="w-14 h-14 hover:bg-zinc-900 rounded-xl flex items-center justify-center">
+                <svg class="w-14 h-14" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" fill-rule="nonzero">
+                    <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M10.9,2.1c-4.6,0.5 -8.3,4.2 -8.8,8.7c-0.5,4.7 2.2,8.9 6.3,10.5c0.3,0.1 0.6,-0.1 0.6,-0.5v-1.6c0,0 -0.4,0.1 -0.9,0.1c-1.4,0 -2,-1.2 -2.1,-1.9c-0.1,-0.4 -0.3,-0.7 -0.6,-1c-0.3,-0.1 -0.4,-0.1 -0.4,-0.2c0,-0.2 0.3,-0.2 0.4,-0.2c0.6,0 1.1,0.7 1.3,1c0.5,0.8 1.1,1 1.4,1c0.4,0 0.7,-0.1 0.9,-0.2c0.1,-0.7 0.4,-1.4 1,-1.8c-2.3,-0.5 -4,-1.8 -4,-4c0,-1.1 0.5,-2.2 1.2,-3c-0.1,-0.2 -0.2,-0.7 -0.2,-1.4c0,-0.4 0,-1 0.3,-1.6c0,0 1.4,0 2.8,1.3c0.5,-0.2 1.2,-0.3 1.9,-0.3c0.7,0 1.4,0.1 2,0.3c1.3,-1.3 2.8,-1.3 2.8,-1.3c0.2,0.6 0.2,1.2 0.2,1.6c0,0.8 -0.1,1.2 -0.2,1.4c0.7,0.8 1.2,1.8 1.2,3c0,2.2 -1.7,3.5 -4,4c0.6,0.5 1,1.4 1,2.3v2.6c0,0.3 0.3,0.6 0.7,0.5c3.7,-1.5 6.3,-5.1 6.3,-9.3c0,-6 -5.1,-10.7 -11.1,-10z"></path></g></g>
+                </svg>
+            </div>
+        </div>
+        <div id="dt" class="text-white text-lg mr-4 flex-col items-center hidden sm:flex">
+            <p id="time" class="color-text font-progmono">00:00:00</p>
+            <p id="date" class="color-text border-t-2 font-progmono">00/00/0000</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
