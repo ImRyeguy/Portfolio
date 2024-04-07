@@ -1,0 +1,6 @@
+{
+    "name": "Terminal Portfolio",
+    "desc": "This is the portfolio you are currently viewing. It is a terminal-based portfolio that is built using HTML, Tailwind CSS, and JavaScript.",
+    "repo": "https://github.com/ImRyeguy/Portfolio",
+    "image": "projects/portfolio.png"
+}
