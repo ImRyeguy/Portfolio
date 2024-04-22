@@ -1,2 +1,2 @@
 # Portfolio
-Initially created during CSS SE137 for Final. Updated and Maintained as a portfolio website.
+Portfolio website created with HTML / Tailwind CSS / Javascript. Created in an old school terminal style. Heavily inspired by the Fallout game series terminals.
